@@ -1,0 +1,113 @@
+body {
+    color: white;
+    font-family: 'Finlandica',sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background: url('img1.jpg') no-repeat;
+    height: 1000px;
+}
+
+.left {
+   /* border: 5px solid red; */
+    display: inline-block;
+    position: absolute;
+    left: 60px;
+    top: 20px;
+}
+.left img{
+    width: 100px;
+    border-radius: 50%;
+}
+.left div{
+    line-height: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.center {
+   /* border: 5px solid greenyellow; */
+    display: block;
+    width: 55%;
+    margin: 30px auto;
+}
+
+.right {
+   /* border: 5px solid pink; */
+    display: inline-block;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+.navbar{
+    display: inline-block;
+}
+.navbar li{
+    display: inline-block;
+    font-size: 25px;
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 35px 25px;
+}
+.navbar li a:hover, .navbar li a.active{
+text-decoration: underline;
+color: aqua;
+}
+.btn{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin: 0px 10px;
+background-color: black;
+color: white;
+padding: 5px 15px;
+border: 2px solid grey;
+border-radius: 10px;
+font-size: 20px;
+cursor: pointer;
+}
+.btn:hover{
+background-color:orangered;
+}
+.container{
+    border: 1px solid white;
+    margin: 100px 80px;
+    padding: 55px;
+    width: 30%;
+    border-radius: 30px;
+}
+.fgroup input{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: block;
+    width: 400px;
+    padding: 2px;
+    border: 2px solid black;
+    margin: 10px auto;
+    font-size: 25px;
+    border-radius: 20px;
+}
+.container h1{
+    text-align: center;
+}
+.container button{
+    display: block;
+    width: 75%;
+    margin: 20px auto;
+}
+
+@media screen and (max-width:700px){
+    .container{
+        width: 400px;
+    }
+    .left{
+        position: relative;
+    }
+    .navbar{
+        display: inline;
+
+    }
+    .right{
+        right: auto;
+        position: relative;
+    }
+}
